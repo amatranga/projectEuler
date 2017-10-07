@@ -23,11 +23,10 @@ const sumEvenFibsLessThan = n => {
   let i = 1;
   let sum = 0;
   while (nthFib(i) < n) {
-    let m = nthFib(i);
-    if (m % 2 === 0) {
-      sum += m;
+    if (nthFib(i) % 2 === 0) {
+      sum += nthFib(i);
     }
     i++;
   }
   return sum;
-}
+};
