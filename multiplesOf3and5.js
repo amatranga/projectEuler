@@ -21,8 +21,8 @@ const reduce = (arr) => {
 
 
 // Because it has to be golfed...
-const golf = (N) => {
-  return Array(N).fill().map((e,i) => (((i + 1) % 3 === 0 || (i + 1) % 5 === 0) && (i + 1 !== N)) ? i + 1 : 0).reduce((a,b) => a + b);
+const golf = (n) => {
+  return Array(n).fill().map((e,i) => (((i + 1) % 3 === 0 || (i + 1) % 5 === 0) && (i + 1 !== N)) ? i + 1 : 0).reduce((a,b) => a + b);
 };
 
 // golf(1000);

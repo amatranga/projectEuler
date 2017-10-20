@@ -4,21 +4,21 @@
 
 
 // Not optimized solution
-const maxDiffer = (nums: Array<number>) => {
-  let maxDifference: number = 0;
-  nums.forEach((num:number) => {
-    nums.forEach((nmr:number) => {
-      let diff:number = 0;
-      if (Math.abs(nmr - num) > Math.abs(diff)) {
-        diff = nmr - num;
-        if (Math.abs(diff) >  Math.abs(maxDifference)) {
-          maxDifference = diff;
-        }
-      }
-    });
-  });
-  return maxDifference;
-}
+// const maxDiffer = (nums: Array<number>) => {
+//   let maxDifference: number = 0;
+//   nums.forEach((num:number) => {
+//     nums.forEach((nmr:number) => {
+//       let diff:number = 0;
+//       if (Math.abs(nmr - num) > Math.abs(diff)) {
+//         diff = nmr - num;
+//         if (Math.abs(diff) >  Math.abs(maxDifference)) {
+//           maxDifference = diff;
+//         }
+//       }
+//     });
+//   });
+//   return maxDifference;
+// }
 
 // Slight optimization
 const maxDifference = (nums: Array<number>) => {
